@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+	<LinearLayout android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+
+		<TextView
+		    android:id="@+id/textView1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="Digite o 1º número: " />
+
+	    <EditText
+	        android:id="@+id/num1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:numeric="decimal" >
+
+        	<requestFocus />
+    	</EditText>
+
+	    <TextView
+	        android:id="@+id/textView2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Digite o 2º número: " />
+
+    	<EditText
+    	    android:id="@+id/num2"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:ems="10"
+    	    android:numeric="decimal" />
+	
+		<LinearLayout
+	    	android:orientation="horizontal"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content">
+	    
+		    <Button
+		        android:id="@+id/btSomar"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Somar"
+		        android:textSize="20px" />
+
+    		<Button
+    		    android:id="@+id/btSubtrair"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:text="Subtrair"
+    		    android:textSize="20px" />
+
+    		<Button
+    		    android:id="@+id/btDividir"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:text="Dividir"
+    		    android:textSize="20px" />
+
+    		<Button
+    		    android:id="@+id/btMultiplicar"
+    		    android:layout_width="115dp"
+    		    android:layout_height="wrap_content"
+    		    android:text="Multiplicar"
+    		    android:textSize="20px" />
+	    
+		</LinearLayout>
+    
+
+    	<TextView
+	        android:id="@+id/textView3"
+    	    android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="Resultado: " />
+
+    	<EditText
+    	    android:id="@+id/result"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:ems="10" />
+
+	</LinearLayout>
+</LinearLayout>
